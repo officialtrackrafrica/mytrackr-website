@@ -2,16 +2,7 @@ import Logos from '../../assets/Contents.png'
 import Image from '../../assets/HeroSection.png'
 
 const FinalCTA: React.FC = () => {
-  const secondaryLogos = [
-    { name: 'Epicurious', src: '/logos/epicurious.svg' },
-    { name: 'CloudWatch', src: '/logos/cloudwatch.svg' },
-    { name: 'Acme Corp', src: '/logos/acme.svg' },
-    { name: 'Polymath', src: '/logos/polymath.svg' },
-    { name: 'Alt+Shift', src: '/logos/altshift.svg' },
-    { name: 'Luminous', src: '/logos/luminous.svg' },
-  ];
-
-  return (
+   return (
     <section className=" bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
