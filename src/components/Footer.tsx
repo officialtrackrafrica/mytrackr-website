@@ -1,5 +1,6 @@
 import React from 'react';
-import { Graph } from 'iconsax-react';
+import logowhite from '../assets/Logowhite.svg'
+
 
 
 const Footer: React.FC = () => {
@@ -32,7 +33,7 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-[#091B37] text-white pt-24 pb-12">
+    <footer className="bg-[#04132B] text-white pt-24 pb-12">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Top CTA Banner */}
@@ -43,7 +44,7 @@ const Footer: React.FC = () => {
             <button className="px-8 py-3 bg-white text-slate-900 font-semibold rounded-lg hover:bg-slate-100 transition-colors">
               Chat with us
             </button>
-            <button className="px-8 py-3 bg-[#2E7EFF] text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors ">
+            <button className="px-8 py-3 bg-[#135ED6] text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors ">
               Get started
             </button>
           </div>
@@ -76,13 +77,16 @@ const Footer: React.FC = () => {
 
         {/* Bottom Copyright Bar */}
         <div className="pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex items-center gap-2">
-                    <Graph size="32" color="#2E7EFF" variant="Bold"/>
-            <span className="text-xl font-bold tracking-tight">MyTrackr</span>
+          <img src={logowhite} alt="" />
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 text-sm text-slate-400">
+            <p>© 2026 MyTrackr. All rights reserved.</p>
+            
+            {/* Added Privacy and Cookie Policy Links here */}
+            <div className="flex items-center gap-6">
+              <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="/cookies" className="hover:text-white transition-colors">Cookie Policy</a>
+            </div>
           </div>
-          <p className="text-slate-500 text-sm">
-            © 2026 MyTrackr. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>

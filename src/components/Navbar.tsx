@@ -1,29 +1,37 @@
 import React, { useState } from 'react';
-import { Graph } from 'iconsax-react';
+import logoWhite from '../assets/Logowhite.svg'
+import logoColored from '../assets/logocolored.svg'
+import { useLocation } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+const location = useLocation();
 
+  // Check if we are on the landing page
+  const isLandingPage = location.pathname === '/';
+
+  // Dynamic styling variables based on the route
+  const navBackground = isLandingPage ? 'bg-[#082656]' : 'bg-[#E7EFFB]';
+  const activeLogo = isLandingPage ? logoWhite : logoColored;
+  
+  // We also need to change text colors so they are readable on both backgrounds
+  const desktopLinkColor = isLandingPage ? 'text-gray-200 hover:text-white' : 'text-[#475467] hover:text-[#135ED6]';
+  const loginBtnColor = isLandingPage ? 'text-white hover:text-gray-200' : 'text-[#0B3880] hover:text-[#091B37]';
+  const menuIconColor = isLandingPage ? 'text-white' : 'text-[#091B37]';
   const navLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'Products', href: '#', hasDropdown: true },
-    { name: 'Resources', href: '#', hasDropdown: true },
-    { name: 'Pricing', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'Home', href: '' },
+    { name: 'Products', href: '', hasDropdown: true },
+    { name: 'Resources', href: '', hasDropdown: true },
+    { name: 'Pricing', href: '' },
+    { name: 'Contact', href: '' },
   ];
 
   return (
-    <nav className="bg-[#EAF2FF] border-b border-gray-100 sticky top-0 z-50">
+    <nav className={`${navBackground} sticky top-0 z-50`}>
       <div className="max-w-[80%] mx-auto h-20 flex items-center justify-between">
         {/* Logo */}
         <div className='flex gap-8 items-center justify-center'>
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full flex items-center justify-center">
-            {/* <span className="text-white font-bold text-xs">MT</span> */}
-            <Graph size="32" color="#2E7EFF" variant="Bold"/>
-          </div>
-          <span className="text-xl font-semibold ">MyTrackr</span>
-        </div>
+        <img src={activeLogo} alt="MyTrackr Logo" />
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-[#091B37]">
@@ -31,7 +39,7 @@ const Navbar: React.FC = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-brand-gray hover:text-brand-blue transition-colors font-medium flex items-center gap-1"
+              className={`${desktopLinkColor} hover:text-brand-blue transition-colors font-medium flex items-center gap-1`}
             >
               {link.name}
               {link.hasDropdown && (
@@ -46,8 +54,8 @@ const Navbar: React.FC = () => {
 
         {/* Auth Buttons (Desktop) */}
         <div className="hidden md:flex items-center gap-4">
-          <button className="text-[#1C4C9B] font-medium hover:text-brand-dark">Log in</button>
-          <button className="bg-[#2E7EFF] text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-600 transition-all">
+          <button className={`${loginBtnColor} font-medium hover:text-brand-dark`}>Log in</button>
+          <button className="bg-[#135ED6] text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-600 transition-all">
             Signup
           </button>
         </div>

@@ -1,5 +1,5 @@
 import Logos from '../../assets/Contents.png'
-import Image from '../../assets/HeroSection.png'
+import Image from '../../assets/heroimg.png'
 
 const FinalCTA: React.FC = () => {
    return (
@@ -18,7 +18,7 @@ const FinalCTA: React.FC = () => {
               <button className="px-8 py-3 bg-white border border-gray-200 text-brand-dark font-semibold rounded-lg hover:bg-gray-50 transition-all">
                 Learn more
               </button>
-              <button className="px-8 py-3 bg-[#2E7EFF] text-white font-semibold rounded-lg hover:bg-blue-600 transition-all ">
+              <button className="px-8 py-3 bg-[#135ED6] text-white font-semibold rounded-lg hover:bg-blue-600 transition-all ">
                 Get started
               </button>
             </div>
@@ -39,7 +39,7 @@ const FinalCTA: React.FC = () => {
 
         {/* Peeking Dashboard Image */}
         <div className="relative mx-auto ">
-          <div className="">
+          <div className="bg-black pt-4 px-4 rounded-2xl">
             <img 
               src={Image} 
               alt="MyTrackr Dashboard Full View" 

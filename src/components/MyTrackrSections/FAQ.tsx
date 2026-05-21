@@ -62,7 +62,7 @@ const FAQ: React.FC = () => {
         <h3 className="text-xl font-bold text-brand-dark mb-4">Still have questions?</h3>
         <p className="text-brand-gray mb-8">Can't find the answer you're looking for? Please chat to our friendly team.</p>
         
-        <button className="bg-brand-blue text-white px-7 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-all">
+        <button className="bg-[#135ED6] text-white px-7 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-all">
           Get in Touch
         </button>
       </div>
