@@ -17,13 +17,19 @@ const location = useLocation();
   // We also need to change text colors so they are readable on both backgrounds
   const desktopLinkColor = isLandingPage ? 'text-gray-200 hover:text-white' : 'text-[#475467] hover:text-[#135ED6]';
   const loginBtnColor = isLandingPage ? 'text-white hover:text-gray-200' : 'text-[#0B3880] hover:text-[#091B37]';
-  const menuIconColor = isLandingPage ? 'text-white' : 'text-[#091B37]';
+  // const menuIconColor = isLandingPage ? 'text-white' : 'text-[#091B37]';
   const navLinks = [
-    { name: 'Home', href: '' },
-    { name: 'Products', href: '', hasDropdown: true },
-    { name: 'Resources', href: '', hasDropdown: true },
-    { name: 'Pricing', href: '' },
-    { name: 'Contact', href: '' },
+    { name: 'Home', href: '/' },
+    { 
+      name: 'Products', 
+      hasDropdown: true,
+      subItems: [
+        { name: 'MyTrackr Finance', href: '/mytrackr-finance' }
+      ]
+    },
+    { name: 'Resources', href: '#features', hasDropdown: true },
+    { name: 'Pricing', href: '#pricing' },
+    { name: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -35,21 +41,37 @@ const location = useLocation();
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-[#091B37]">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className={`${desktopLinkColor} hover:text-brand-blue transition-colors font-medium flex items-center gap-1`}
-            >
-              {link.name}
-              {link.hasDropdown && (
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              )}
-            </a>
-          ))}
-        </div>
+            {navLinks.map((link) => (
+              <div key={link.name} className="relative group py-6">
+                <a
+                  href={link.href}
+                  className={`${desktopLinkColor} transition-colors font-medium flex items-center gap-1`}
+                >
+                  {link.name}
+                  {link.hasDropdown && (
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  )}
+                </a>
+
+                {/* Desktop Dropdown Menu */}
+                {link.hasDropdown && link.subItems && (
+                  <div className="absolute top-full left-0 mt-[-10px] w-56 bg-white rounded-xl shadow-lg py-2 hidden group-hover:block border border-gray-100 transition-all z-50">
+                    {link.subItems.map((subItem) => (
+                      <a 
+                        key={subItem.name} 
+                        href={subItem.href} 
+                        className="block px-5 py-3 text-sm text-[#475467] hover:bg-[#F4F9F1] hover:text-[#135ED6] font-medium transition-colors"
+                      >
+                        {subItem.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Auth Buttons (Desktop) */}

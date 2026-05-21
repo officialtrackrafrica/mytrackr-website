@@ -1,4 +1,3 @@
-import React from 'react';
 import icon from '../../assets/ctaicon.svg'; 
 
 const CTASection = () => {

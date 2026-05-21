@@ -1,6 +1,5 @@
 import React from 'react';
 import HeroImage from '../../assets/heroimg.png'
-import { PlayCircle } from 'iconsax-react';
 
 const Hero: React.FC = () => {
   return (

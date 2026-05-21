@@ -1,12 +1,12 @@
 import React from 'react';
-import { TickCircle, Profile2User, Chart2 } from 'iconsax-react';
+import { TickCircle } from 'iconsax-react';
 import Image1 from '../../assets/Image1.png'
 import Image2 from '../../assets/Image2.png'
 import Image3 from '../../assets/Image3.png'
 
 const DetailedFeatures: React.FC = () => {
   return (
-    <section className="py-24 space-y-24">
+    <section className="py-24 space-y-24" id='features'>
       <div className="text-center mb-16 px-6">
         <h2 className="text-3xl md:text-5xl font-bold text-brand-dark mb-4 leading-14">
           Simple financial management tool for solo <br className="hidden md:block" />  entrepreneurs and growing Businesses

@@ -1,4 +1,3 @@
-import React from 'react';
 import { TickCircle } from 'iconsax-react';
 
 const plans = [
@@ -75,7 +74,7 @@ const plans = [
 
 const Pricing = () => {
   return (
-    <section className="py-20 bg-gray-50 min-h-screen">
+    <section className="py-20 bg-gray-50 min-h-screen" id='pricing'>
       <div className="max-w-7xl mx-auto px-6"> 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {plans.map((plan, idx) => (

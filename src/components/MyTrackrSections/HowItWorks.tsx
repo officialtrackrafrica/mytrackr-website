@@ -1,5 +1,5 @@
 import React from 'react';
-import { TickCircle, Profile2User, Shop, Moneys, Chart, DiscountShape } from 'iconsax-react';
+import { TickCircle, Moneys, Chart, DiscountShape } from 'iconsax-react';
 import PeopleImage from '../../assets/people.png'
 import PeopleImage2 from '../../assets/people2.png'
 import PeopleImage3 from '../../assets/people3.png'

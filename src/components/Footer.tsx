@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-[#04132B] text-white pt-24 pb-12">
+    <footer className="bg-[#04132B] text-white pt-24 pb-12" id='contact'>
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Top CTA Banner */}
