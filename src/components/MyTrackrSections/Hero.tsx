@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
 
       {/* Subtext */}
       <p className="text-[#475467] text-lg md:text-xl max-w-2xl mx-auto mb-10">
-       All-in-One Platform to automatically track your income and expenses so that you can know your real profit and keep your business numbers at your fingertips without stress.
+       All-in-One Platform to automatically track your income and expenses; know your real profit and keep your business numbers at your fingertips without stress.
       </p>
 
       {/* CTAs */}

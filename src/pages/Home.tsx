@@ -6,7 +6,7 @@ import HowItWorks from '../components/MyTrackrSections/HowItWorks'
 import DetailedFeatures from '../components/MyTrackrSections/DetailedFeatures'
 import Pricing from '../components/MyTrackrSections/Pricing'
 import FAQ from '../components/MyTrackrSections/FAQ'
-import FinalCTA from '../components/MyTrackrSections/FinalCTA'
+// import FinalCTA from '../components/MyTrackrSections/FinalCTA'
 
 const Home = () => {
   return (
@@ -18,7 +18,7 @@ const Home = () => {
       <DetailedFeatures />
       <Pricing />
       <FAQ />
-      <FinalCTA />
+      {/* <FinalCTA /> */}
     </main>
   )
 }

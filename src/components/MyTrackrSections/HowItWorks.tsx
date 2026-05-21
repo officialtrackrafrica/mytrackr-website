@@ -31,9 +31,9 @@ const HowItWorks: React.FC = () => {
 
   return (
     <section className="py-24 space-y-32">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-semibold max-w-2xl text-[#050E1E] mb-6 mx-auto">How My Trackr works for your business</h2>
-          <p className="text-[#475467] max-w-2xl mx-auto text-xl">
+        <div className="text-center mb-16 ">
+          <h2 className="text-3xl md:text-5xl font-semibold max-w-[90%] md:max-w-2xl text-[#050E1E] mb-6 mx-auto">How My Trackr works for your business</h2>
+          <p className="text-[#475467] mx-auto text-xl max-w-[90%] md:max-w-2xl">
             Manage your finances, control cash flow and integrate with apps. See how MyTrackr can help your business type or industry.
           </p>
         </div>

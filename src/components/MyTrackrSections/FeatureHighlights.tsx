@@ -24,7 +24,7 @@ const FeatureHighlights: React.FC = () => {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-5xl font-semibold text-[#050E1E] mb-6 leading-14">
+          <h2 className="text-3xl md:text-5xl font-semibold text-[#050E1E] mb-6 md:leading-14">
             Running a business is hard enough. <br />Tracking the money shouldn’t be.
           </h2>
           <p className="text-[#475467] max-w-2xl mx-auto text-xl">

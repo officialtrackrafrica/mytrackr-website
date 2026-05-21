@@ -8,7 +8,7 @@ const DetailedFeatures: React.FC = () => {
   return (
     <section className="py-24 space-y-24" id='features'>
       <div className="text-center mb-16 px-6">
-        <h2 className="text-3xl md:text-5xl font-bold text-brand-dark mb-4 leading-14">
+        <h2 className="text-3xl md:text-5xl font-bold text-brand-dark mb-4 md:leading-14">
           Simple financial management tool for solo <br className="hidden md:block" />  entrepreneurs and growing Businesses
         </h2>
         <p className="text-[#475467] max-w-2xl mx-auto text-xl">
