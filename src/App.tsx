@@ -21,8 +21,8 @@ function App() {
         {/* The Routes determine what renders in the middle */}
         <div className="flex-grow">
           <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/mytrackr-finance" element={<Home />} />
+            <Route path="/agency" element={<LandingPage />} />
+            <Route path="/" element={<Home />} />
    
             <Route path="/privacy" element={<PrivacyPolicy />} />
 <Route path="/cookies" element={<CookiePolicy  />} />

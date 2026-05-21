@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
 const location = useLocation();
 
   // Check if we are on the landing page
-  const isLandingPage = location.pathname === '/';
+  const isLandingPage = location.pathname === '/agency';
 
   // Dynamic styling variables based on the route
   const navBackground = isLandingPage ? 'bg-[#082656]' : 'bg-[#E7EFFB]';
@@ -24,7 +24,7 @@ const location = useLocation();
       name: 'Products', 
       hasDropdown: true,
       subItems: [
-        { name: 'MyTrackr Finance', href: '/mytrackr-finance' }
+        { name: 'Agency', href: '/agency' }
       ]
     },
     { name: 'Resources', href: '#features', hasDropdown: true },

@@ -3,7 +3,7 @@ import AgencyImage2 from '../assets/AgencyImage2.png'
 import CTASection from '../components/AgencySections/CTASection';
 
 import OurServices from '../components/AgencySections/Services'
-import LogoCloud from '../components/MyTrackrSections/BusinessLogos';
+// import LogoCloud from '../components/MyTrackrSections/BusinessLogos';
 
 
 const LandingPage = () => {
@@ -38,7 +38,7 @@ const LandingPage = () => {
 
       {/* SOCIAL PROOF SECTION */}
             {/* <img src={Logos} alt="logos" className="h-8 mx-auto" /> */}
-      <LogoCloud />
+      {/* <LogoCloud /> */}
 
       {/* FEATURE / ABOUT SECTION */}
       <section className="py-24 bg-[#EAF2FF] px-6">
