@@ -76,10 +76,13 @@ const location = useLocation();
 
         {/* Auth Buttons (Desktop) */}
         <div className="hidden md:flex items-center gap-4">
-          <button className={`${loginBtnColor} font-medium hover:text-brand-dark`}>Log in</button>
-          <button className="bg-[#135ED6] text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-600 transition-all">
-            Signup
-          </button>
+          <a href="https://dashboard.mytrackrservices.com/login" target='blank' className={`${loginBtnColor} font-medium hover:text-brand-dark`}>Log in</a>
+          <a 
+            href="https://dashboard.mytrackrservices.com/signup" target='blank'
+            className="w-full md:w-auto px-8 py-3 bg-[#135ED6] text-white font-semibold rounded-lg shadow-lg hover:bg-blue-600 transition-colors inline-block text-center"
+          >
+            Sign up
+          </a>
         </div>
 
         {/* Mobile Toggle */}

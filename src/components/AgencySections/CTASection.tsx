@@ -29,9 +29,9 @@ const CTASection = () => {
             mind. Let’s help you create a financial safety net and secure your financial future.
           </p>
 
-          <button className="bg-[#135ED6] text-white px-8 py-3.5 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-sm">
+          <a href="https://dashboard.mytrackrservices.com/signup" target='blank' className="bg-[#135ED6] text-white px-8 py-3.5 rounded-lg font-medium hover:bg-blue-700 transition-colors shadow-sm">
             Secure your Spot
-          </button>
+          </a>
         </div>
 
       </div>

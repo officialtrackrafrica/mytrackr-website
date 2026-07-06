@@ -106,9 +106,11 @@ const Pricing = () => {
                 {plan.description}
               </p>
 
-              <button className="w-full bg-[#1A56DB] text-white py-3.5 rounded-lg font-semibold hover:bg-blue-700 transition-colors mb-8">
+              <a
+              href="https://dashboard.mytrackrservices.com/signup" target='blank'
+              className="w-full bg-[#1A56DB] text-white py-3.5 rounded-lg font-semibold hover:bg-blue-700 transition-colors mb-8 text-center">
                 Get started
-              </button>
+              </a>
 
               <div className="border-t border-gray-100 pt-8 flex-1">
                 <h4 className="font-bold text-[#101828] text-xs tracking-wider mb-6">

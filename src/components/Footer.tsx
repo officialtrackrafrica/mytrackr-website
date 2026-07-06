@@ -44,9 +44,10 @@ const Footer: React.FC = () => {
             <button className="px-8 py-3 bg-white text-slate-900 font-semibold rounded-lg hover:bg-slate-100 transition-colors">
               Chat with us
             </button>
-            <button className="px-8 py-3 bg-[#135ED6] text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors ">
+            <a href="https://dashboard.mytrackrservices.com/signup" target='blank'
+ className="px-8 py-3 bg-[#135ED6] text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors ">
               Get started
-            </button>
+            </a>
           </div>
         </div>
 

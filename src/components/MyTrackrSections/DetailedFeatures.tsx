@@ -30,9 +30,11 @@ const DetailedFeatures: React.FC = () => {
               </li>
             ))}
           </ul>
-          <button className="bg-[#135ED6] text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-all">
-            Join Our Waitlist
-          </button>
+          <a 
+            href="https://dashboard.mytrackrservices.com/signup" target='blank'
+           className="bg-[#135ED6] text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-all">
+            Signup
+          </a>
         </div>
         <div className="flex-1 order-1 md:order-2">
           <img src={Image1} alt="Performance chart" className="w-full h-auto drop-shadow-2xl" />
@@ -57,9 +59,11 @@ const DetailedFeatures: React.FC = () => {
                 </li>
               ))}
             </ul>
-            <button className="bg-[#135ED6] text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-all">
-              Join Our Waitlist
-            </button>
+             <a 
+            href="https://dashboard.mytrackrservices.com/signup" target='blank'
+           className="bg-[#135ED6] text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-all">
+            Signup
+          </a>
           </div>
         </div>
       </div>
@@ -77,9 +81,11 @@ const DetailedFeatures: React.FC = () => {
               </li>
             ))}
           </ul>
-          <button className="bg-[#135ED6] text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-all">
-            Join Our Waitlist
-          </button>
+           <a 
+            href="https://dashboard.mytrackrservices.com/signup" target='blank'
+           className="bg-[#135ED6] text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-all">
+            Signup
+          </a>
         </div>
         <div className="flex-1 order-1 md:order-2">
           <img src={Image3} alt="Performance chart" className="w-full h-auto" />

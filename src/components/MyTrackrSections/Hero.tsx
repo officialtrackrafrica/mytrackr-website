@@ -24,10 +24,15 @@ const Hero: React.FC = () => {
       {/* CTAs */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-20">
         
-        <button className="w-full md:w-auto px-8 py-3 bg-[#135ED6] text-white font-semibold rounded-lg shadow-lg hover:bg-blue-600 transition-colors">
-          Join Our Waitlist
-        </button>
-        
+        {/* <button className="w-full md:w-auto px-8 py-3 bg-[#135ED6] text-white font-semibold rounded-lg shadow-lg hover:bg-blue-600 transition-colors">
+          Sign up
+        </button> */}
+        <a 
+            href="https://dashboard.mytrackrservices.com/signup" target='blank'
+            className="w-full md:w-auto px-8 py-3 bg-[#135ED6] text-white font-semibold rounded-lg shadow-lg hover:bg-blue-600 transition-colors inline-block text-center"
+          >
+            Sign up
+          </a>
       </div>
 
       {/* Dashboard Preview Image */}

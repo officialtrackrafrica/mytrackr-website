@@ -21,15 +21,18 @@ const LandingPage = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="flex items-center gap-2 bg-white text-gray-900 font-medium px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors">
+            {/* <button className="flex items-center gap-2 bg-white text-gray-900 font-medium px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8 5V19L19 12L8 5Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Demo
-            </button>
-            <button className="bg-[#1A56DB] text-white font-medium px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-              Book a free call
-            </button>
+            </button> */}
+             <a 
+            href="https://dashboard.mytrackrservices.com/signup" target='blank'
+            className="w-full md:w-auto px-8 py-3 bg-[#135ED6] text-white font-semibold rounded-lg shadow-lg hover:bg-blue-600 transition-colors inline-block text-center"
+          >
+            Sign up
+          </a>
           </div>
         </div>
         <img src={AgencyImage} alt="" className='mt-16'/>
@@ -61,9 +64,10 @@ const LandingPage = () => {
                 Just clarity.
               </p>
             </div>
-            <button className="bg-[#1A56DB] text-white font-medium px-8 py-3.5 rounded-lg hover:bg-blue-700 transition-colors mt-4 shadow-lg shadow-blue-200">
+            <a href="https://dashboard.mytrackrservices.com/signup" target='blank'
+            className="bg-[#1A56DB] text-white font-medium px-8 py-3.5 rounded-lg hover:bg-blue-700 transition-colors mt-4 shadow-lg shadow-blue-200">
               Get Started
-            </button>
+            </a>
           </div>
           <div className="flex-1">
             <img
