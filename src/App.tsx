@@ -10,10 +10,14 @@ import LandingPage from './pages/Agency'
 import PrivacyPolicy from './components/Privacy'
 import CookiePolicy from './components/Cookie'
 import CookieBanner from './components/CookieBanner'
+import Terms from './components/Terms'
+import { UseCasesPage } from './components/UseCasesPage'
+import { ScrollToTop } from './ScrollToTop'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className='relative min-h-screen flex flex-col'>
         {/* Navbar stays at the top of every page */}
         <Navbar />
@@ -26,6 +30,8 @@ function App() {
    
             <Route path="/privacy" element={<PrivacyPolicy />} />
 <Route path="/cookies" element={<CookiePolicy  />} />
+<Route path="/terms" element={<Terms  />} />
+<Route path="/use-cases" element={<UseCasesPage  />} />
           </Routes>
         </div>
 <CookieBanner />

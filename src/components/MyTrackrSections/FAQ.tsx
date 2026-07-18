@@ -5,17 +5,40 @@ import Support from '../../assets/support.png'
 const FAQ: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
-  const faqs = [
-    {
-      q: "Is there a free trial available?",
-      a: "Yes, you can try us for free for 30 days. If you want, we'll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible."
-    },
-    { q: "Can I change my plan later?", a: "Absolutely. You can upgrade or downgrade your plan at any time from your dashboard settings." },
-    { q: "What is your cancellation policy?", a: "You can cancel your subscription at any time. Your access will continue until the end of your current billing period." },
-    { q: "Can other info be added to an invoice?", a: "Yes, you can add custom billing details, VAT numbers, and company addresses to your invoices." },
-    { q: "How does billing work?", a: "We bill monthly or annually. All payments are processed securely through our payment partners." },
-    { q: "How do I change my account email?", a: "You can update your email address in the 'Account Settings' section of your profile." }
-  ];
+  const FAQS = [
+  {
+    question: 'Who is MyTrackr for?',
+    answer: 'MyTrackr is built for growing businesses, freelancers, and service providers that want better visibility into their finances without stress, manual calculation, or complicated systems.'
+  },
+  {
+    question: 'Is it safe to connect my bank account?',
+    answer: 'Yes. MyTrackr only uses secure, read-only access to transaction data. We do not have access to move money or perform transactions on your account. If you prefer, you can also upload your bank statements manually instead of connecting your account.'
+  },
+  {
+    question: 'Does MyTrackr work on mobile devices?',
+    answer: 'Yes. MyTrackr is very mobile friendly. It works perfectly on desktop, tablet, and mobile browsers.'
+  },
+  {
+    question: 'What should I do if my bank is not currently supported?',
+    answer: 'We are working to ensure we support all banks. If your bank is not currently supported, you can still use MyTrackr by uploading your bank statements manually or by linking your website if you have one.'
+  },
+  {
+    question: 'What makes MyTrackr different from other accounting software?',
+    answer: 'MyTrackr focuses on simplicity. It helps growing business owners understand their money without the difficulty of traditional accounting tools.'
+  },
+  {
+    question: 'Do I need accounting knowledge to use MyTrackr?',
+    answer: 'No. MyTrackr was designed for everyday business owners, not accountants. The platform uses simple language and easy-to-understand reports.'
+  },
+  {
+    question: 'Can I cancel or change my subscription plan?',
+    answer: 'Yes. You can upgrade, downgrade, or cancel your subscription anytime. If you cancel your plan, you’ll continue to have access to MyTrackr until the end of your current billing period.'
+  },
+  {
+    question: 'What if I sometimes spend business money personally?',
+    answer: 'That’s common for many business owners. MyTrackr allows you to categorise personal withdrawals separately so you can better understand your actual business expenses and profit.'
+  }
+];
 
   return (
     <section className="py-24 bg-white border-t border-gray-50">
@@ -26,14 +49,14 @@ const FAQ: React.FC = () => {
         </div>
 
         <div className="space-y-2">
-          {faqs.map((faq, idx) => (
+          {FAQS.map((faq, idx) => (
             <div key={idx} className="border-b border-gray-100 last:border-0">
               <button
                 onClick={() => setActiveIndex(activeIndex === idx ? null : idx)}
                 className="w-full py-6 flex justify-between items-center text-left hover:text-brand-blue transition-colors group"
               >
                 <span className="text-lg font-semibold text-brand-dark group-hover:text-brand-blue">
-                  {faq.q}
+                  {faq.question}
                 </span>
                 {activeIndex === idx ? (
                   <MinusCirlce size="24" color='#2E7EFF' className="text-brand-gray cursor-pointer" />
@@ -45,7 +68,7 @@ const FAQ: React.FC = () => {
               {/* Animated Reveal */}
               <div className={`overflow-hidden transition-all duration-300 ${activeIndex === idx ? 'max-h-40 pb-6' : 'max-h-0'}`}>
                 <p className="text-brand-gray leading-relaxed">
-                  {faq.a}
+                  {faq.answer}
                 </p>
               </div>
             </div>

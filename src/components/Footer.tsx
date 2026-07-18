@@ -1,5 +1,6 @@
 import React from 'react';
 import logowhite from '../assets/Logowhite.svg'
+import { Link } from 'react-router-dom';
 
 
 
@@ -20,7 +21,7 @@ const Footer: React.FC = () => {
     },
     {
       title: "Use cases",
-      links: ["Startups", "Enterprise", "Government", "SaaS centre", "Marketplaces", "Ecommerce"]
+      links: ["Online/Offline Vendor", "Schools", "Creatives", "Founders"]
     },
     {
       title: "Social",
@@ -31,6 +32,19 @@ const Footer: React.FC = () => {
       links: ["Terms", "Privacy", "Cookies", "Licenses", "Settings", "Contact"]
     }
   ];
+
+  
+const getLinkUrl = (sectionTitle: string, linkName: string) => {
+    if (sectionTitle === "Use cases") {
+      return "/use-cases"; 
+    }
+    
+    // Legal links
+    if (linkName === "Privacy") return "/privacy";
+    if (linkName === "Cookies") return "/cookies";
+    
+    return "#"; 
+  };
 
   return (
     <footer className="bg-[#04132B] text-white pt-24 pb-12" id='contact'>
@@ -61,9 +75,12 @@ const Footer: React.FC = () => {
               <ul className="space-y-4">
                 {section.links.map((link) => (
                   <li key={link} className="flex items-center gap-2">
-                    <a href="#" className="text-slate-300 hover:text-white transition-colors font-medium">
+                   <Link 
+                      to={getLinkUrl(section.title, link)} 
+                      className="text-slate-300 hover:text-white transition-colors font-medium"
+                    >
                       {link}
-                    </a>
+                    </Link>
                     {section.hasBadge === link && (
                       <span className="bg-slate-800 text-slate-300 text-[10px] px-2 py-0.5 rounded-full border border-slate-700">
                         New
