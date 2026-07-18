@@ -1,7 +1,7 @@
 import React from 'react';
 import { TickCircle, Moneys, Chart, DiscountShape } from 'iconsax-react';
-import PeopleImage from '../../assets/webimg.png'
-import PeopleImage2 from '../../assets/webimg2.png'
+import PeopleImage from '../../assets/webimg2.png'
+import PeopleImage2 from '../../assets/webimg.png'
 import PeopleImage3 from '../../assets/webimg3.png'
 
 const HowItWorks: React.FC = () => {

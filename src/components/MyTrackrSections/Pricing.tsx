@@ -5,7 +5,7 @@ const plans = [
     name: "Solo",
     price: "2,900",
     description: "For businesses that want smart, automatic and seamless financial tracking",
-    isPopular: false,
+    isPopular: true,
     features: [
       "Live sync – 1 bank account accounts",
       "All financial reports",
@@ -19,7 +19,7 @@ const plans = [
     name: "Duo",
     price: "3,400",
     description: "Sync two bank accounts seamlessly, increase your clarity",
-    isPopular: true,
+    isPopular: false,
     features: [
       "Live sync – 2 bank accounts",
       "All financial reports",
@@ -61,7 +61,7 @@ const plans = [
     name: "Starter",
     price: "500",
     description: "For businesses that want affordable manual tracking",
-    isPopular: true,
+    isPopular: false,
     features: [
       "Upload your bank statement manually",
       "All financial reports",
