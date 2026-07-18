@@ -1,8 +1,8 @@
 import React from 'react';
 import { TickCircle, Moneys, Chart, DiscountShape } from 'iconsax-react';
-import PeopleImage from '../../assets/people.png'
-import PeopleImage2 from '../../assets/people2.png'
-import PeopleImage3 from '../../assets/people3.png'
+import PeopleImage from '../../assets/webimg.png'
+import PeopleImage2 from '../../assets/webimg2.png'
+import PeopleImage3 from '../../assets/webimg3.png'
 
 const HowItWorks: React.FC = () => {
   const sections = [
@@ -62,7 +62,7 @@ const HowItWorks: React.FC = () => {
           {/* Image Content */}
           <div className="flex-1 w-full">
             <div className="overflow-hidden ">
-              <img src={section.img} alt={section.title} className="w-full h-auto object-cover" />
+              <img src={section.img} alt={section.title} className="w-full h-auto object-cover rounded-lg" />
             </div>
           </div>
         </div>
