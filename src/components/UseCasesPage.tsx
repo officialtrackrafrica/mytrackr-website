@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Shop, Book, Brush, ArrowDown2 } from 'iconsax-react';
+import { Shop, Book, Brush } from 'iconsax-react';
 
 // --- DATA STRUCTURES ---
 
