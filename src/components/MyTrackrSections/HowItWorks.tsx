@@ -9,7 +9,7 @@ const HowItWorks: React.FC = () => {
     {
       title: "Track your money",
       desc: "Connect your bank account and keep track of business income and expenses in one place.",
-      features: [" Keeps track of the money coming in and going out", " Keeps track of the money coming in and going out", "Automatically sorts repeated transactions", "Updates your transactions automatically"],
+      features: ["Replace financial anxiety with clarity.", "Keeps track of the money coming in and going out.", "Automatically sorts repeated transactions.", "Updates your transactions automatically."],
       icon: <Moneys size="20" color='#2E7EFF' variant="Linear" />,
       img: PeopleImage // Replace with your asset
     },
@@ -34,7 +34,7 @@ const HowItWorks: React.FC = () => {
         <div className="text-center mb-16 ">
           <h2 className="text-3xl md:text-5xl font-semibold max-w-[90%] md:max-w-2xl text-[#050E1E] mb-6 mx-auto">How My Trackr works for your business</h2>
           <p className="text-[#475467] mx-auto text-xl max-w-[90%] md:max-w-2xl">
-            Manage your finances, control cash flow and integrate with apps. See how MyTrackr can help your business type or industry.
+            Track your finances and control your cash flow. Securely connect MyTrackr to your bank or website to get live insights into your business numbers.
           </p>
         </div>
       {sections.map((section, idx) => (
