@@ -28,7 +28,7 @@ const LandingPage = () => {
               Demo
             </button> */}
              <a 
-            href="https://dashboard.mytrackrservices.com/signup" target='blank'
+            href="https://forms.gle/wFYH983Nt2MPgSk3A" target='blank'
             className="w-full md:w-auto px-8 py-3 bg-[#135ED6] text-white font-semibold rounded-lg shadow-lg hover:bg-blue-600 transition-colors inline-block text-center"
           >
             Sign up
@@ -64,7 +64,7 @@ const LandingPage = () => {
                 Just clarity.
               </p>
             </div>
-            <a href="https://dashboard.mytrackrservices.com/signup" target='blank'
+            <a href="https://forms.gle/wFYH983Nt2MPgSk3A" target='blank'
             className="bg-[#1A56DB] text-white font-medium px-8 py-3.5 rounded-lg hover:bg-blue-700 transition-colors mt-4 shadow-lg shadow-blue-200">
               Get Started
             </a>

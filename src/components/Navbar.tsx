@@ -104,13 +104,32 @@ const location = useLocation();
       {isOpen && (
         <div className="md:hidden absolute top-20 left-0 w-full bg-white border-b border-gray-200 py-6 px-6 flex flex-col gap-4 shadow-xl">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="text-lg font-medium text-brand-dark border-b border-gray-50 pb-2">
-              {link.name}
-            </a>
+            <div key={link.name} className="flex flex-col border-b border-gray-50 pb-2">
+              {/* Main Link */}
+              <a href={link.href || '#'} className="text-lg font-medium text-brand-dark">
+                {link.name}
+              </a>
+              
+              {/* Sub-items (Dropdown Links) for Mobile */}
+              {link.hasDropdown && link.subItems && (
+                <div className="flex flex-col gap-3 pl-4 mt-3">
+                  {link.subItems.map((subItem) => (
+                    <a 
+                      key={subItem.name} 
+                      href={subItem.href} 
+                      className="text-base font-medium text-[#475467]"
+                    >
+                      {subItem.name}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
+          
           <div className="flex flex-col gap-3 pt-4">
-            <button className="w-full py-3 text-brand-dark font-medium border border-gray-200 rounded-lg">Log in</button>
-            <button className="w-full py-3 bg-brand-blue text-white font-semibold rounded-lg">Signup</button>
+            <a href="https://dashboard.mytrackrservices.com/login" target='blank' className="w-full py-3 text-center text-brand-dark font-medium border border-gray-200 rounded-lg">Log in</a>
+            <a href="https://dashboard.mytrackrservices.com/signup" target='blank' className="w-full py-3 text-center bg-[#135ED6] text-white font-semibold rounded-lg">Signup</a>
           </div>
         </div>
       )}
